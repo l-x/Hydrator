@@ -174,4 +174,10 @@ final class HydratorTest extends TestCase
             $extractorResult
         );
     }
+
+    public function testFlagValues()
+    {
+        $this->assertSame(1, Hydrator::NO_STRICT_KEYS);
+        $this->assertSame(2, Hydrator::IGNORE_KEYS);
+    }
 }
